@@ -11,43 +11,22 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var emojiBig: UILabel!
-    
     @IBOutlet weak var emojiDefinition: UILabel!
+    @IBOutlet weak var emojiCategory: UILabel!
+    @IBOutlet weak var emojiYear: UILabel!
     
-    var emoji = "No Emoji"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     
-        emojiBig.text = emoji
+        emojiBig.text = emoji.stringEmoji
+        emojiDefinition.text = emoji.definition
+        emojiYear.text = "Created in \(emoji.birthYear)"
+        emojiCategory.text = emoji.category
         
-        if emoji == "😎" {
-            emojiDefinition.text = "This is a cool guy."
-        } else if emoji == "🤷🏻‍♂️" {
-            emojiDefinition.text = "This guy doesn't care."
-        } else if emoji == "😭" {
-            emojiDefinition.text = "Wow he seems sad."
-        } else if emoji == "😬" {
-            emojiDefinition.text = "Ehhhhhh...?!?!?!"
-        } else if emoji == "🙏🏻" {
-            emojiDefinition.text = "PRAY"
-        } else if emoji == "😈" {
-            emojiDefinition.text = "Pretty sure he is up to no good."
-        } else if emoji == "🙈" {
-            emojiDefinition.text = "Scared monkey!"
-        } else if emoji == "🙄" {
-            emojiDefinition.text = "Please..."
-        } else if emoji == "😡" {
-            emojiDefinition.text = "What an angry dude."
-        } else if emoji == "🐥" {
-            emojiDefinition.text = "MUST. LOVE."
-        } else if emoji == "❤️" {
-            emojiDefinition.text = "ILU"
-        } else {
-            emojiDefinition.text = "Not sure about this one."
-        }
     }
 
     

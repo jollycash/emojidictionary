@@ -58,7 +58,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cool guy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBy-AA-hAl">
-                                <rect key="frame" x="119.5" y="515" width="136" height="21"/>
+                                <rect key="frame" x="119.5" y="415" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONA-18-j9X">
+                                <rect key="frame" x="122.5" y="461" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created in 2005" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-5p-4gV">
+                                <rect key="frame" x="125.5" y="507" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,15 +79,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HBy-AA-hAl" firstAttribute="centerX" secondItem="5fl-Ml-zRX" secondAttribute="centerX" id="7fk-Uv-7au"/>
+                            <constraint firstItem="Xck-5p-4gV" firstAttribute="centerX" secondItem="5fl-Ml-zRX" secondAttribute="centerX" id="Fsc-U8-73G"/>
+                            <constraint firstItem="ONA-18-j9X" firstAttribute="centerX" secondItem="5fl-Ml-zRX" secondAttribute="centerX" id="c55-vE-FQH"/>
                             <constraint firstItem="oso-71-DRc" firstAttribute="top" secondItem="OsV-q9-C9P" secondAttribute="top" constant="50" id="pxE-UE-zzu"/>
-                            <constraint firstItem="HBy-AA-hAl" firstAttribute="top" secondItem="oso-71-DRc" secondAttribute="bottom" constant="150" id="rlW-EG-g8d"/>
+                            <constraint firstItem="ONA-18-j9X" firstAttribute="top" secondItem="HBy-AA-hAl" secondAttribute="bottom" constant="25" id="rRn-qe-T4I"/>
+                            <constraint firstItem="HBy-AA-hAl" firstAttribute="top" secondItem="oso-71-DRc" secondAttribute="bottom" constant="50" id="rlW-EG-g8d"/>
+                            <constraint firstItem="Xck-5p-4gV" firstAttribute="top" secondItem="ONA-18-j9X" secondAttribute="bottom" constant="25" id="tdr-Sk-l4f"/>
                             <constraint firstItem="oso-71-DRc" firstAttribute="centerX" secondItem="5fl-Ml-zRX" secondAttribute="centerX" id="vnG-ES-pJl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OsV-q9-C9P"/>
                     </view>
                     <connections>
                         <outlet property="emojiBig" destination="oso-71-DRc" id="F0x-IB-5OR"/>
+                        <outlet property="emojiCategory" destination="ONA-18-j9X" id="TSV-06-mwZ"/>
                         <outlet property="emojiDefinition" destination="HBy-AA-hAl" id="5PC-hO-Jnl"/>
+                        <outlet property="emojiYear" destination="Xck-5p-4gV" id="R3S-dQ-xVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QsK-zY-3aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
